@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div>
+	<input type="txt" id="txt" placeholder="Enter your name" onblur="fun()">
+	<input type="txt" id="txt1" placeholder="Enter your name" onfocusin="fun1(this)" onfocusout="fun2(this)">
+</div>
+<script type="text/javascript">
+	function fun(){
+		let x=document.getElementById('txt');
+		x.value=x.value.toUpperCase();
+	}
+	function fun1(x){
+		x.style.background = 'black';
+	}
+	function fun2(x){
+		x.style.background = 'white';
+	}
+</script>
+</body>
+</html>
